@@ -1,0 +1,31 @@
+<html>
+  <head></head>
+  <body>
+    <h1>Graffiti Wall!</h1>
+    <div id="loading">loading...</div>
+
+    <div id="test"></div>
+    <div id="wall"></div>
+
+    <script type="module">
+      import {Inspector, Runtime} from "https://unpkg.com/@observablehq/notebook-runtime@1.0.1?module";
+      import notebook from 'https://api.observablehq.com/@asg017/graffiti-wall.js?key=546f60cad4f1ed3a';
+      let selectors = {
+        wall:'#wall',
+      }
+      Runtime.load(notebook, (variable) => {
+        //console.log(variable, console.log(typeof(variable)));
+        let sel = selectors[variable.name]
+        if(sel) {
+          return new Inspector(document.querySelector(sel));
+        }
+        else {
+          return true
+        }
+      })
+      document.querySelector('#loading').innerHTML = '';
+
+      
+    </script>
+  </body>
+</html>
