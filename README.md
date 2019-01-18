@@ -1,4 +1,4 @@
-# Graffiti Wall
+# Graffiti Wall [![CircleCI](https://circleci.com/gh/eceusc/graffiti-wall/tree/master.svg?style=svg)](https://circleci.com/gh/eceusc/graffiti-wall/tree/master)
 A wall that you can tag to learn about Git and Pull Requests.
 
 ## Tutorial
