@@ -17,7 +17,7 @@ jobs:
 
     steps:
       - checkout
-      
+
       - run:
           name: run tests
           command: |
@@ -25,5 +25,5 @@ jobs:
                 python manage.py test
 
       - store_artifacts:
-        path: test-reports
-        destination: test-reports
+          path: test-reports
+          destination: test-reports
