@@ -1,4 +1,4 @@
-"grid":[
+{"grid":[
     [1,0,0,1,1,1,1],
     [1,0,0,1,0,0,1],
     [1,0,0,1,0,0,1],
@@ -10,4 +10,4 @@
 
   "color": "steelblue",
 
-  "name":"Nakul Goel"
+  "name":"Nakul Goel"}
